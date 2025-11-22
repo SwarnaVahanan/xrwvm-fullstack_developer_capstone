@@ -148,4 +148,8 @@ def add_review(request):
         except:
             return JsonResponse({"status":401,"message":"Error in posting review"})
     else:
+<<<<<<< HEAD
         return JsonResponse({"status":403,"message":"Unauthorized"})
+=======
+        return JsonResponse({"status":403,"message":"Unauthorized"})
+>>>>>>> 317c550496e9e8a1b49dc01762e94981e3b9ccff

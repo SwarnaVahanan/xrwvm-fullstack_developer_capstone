@@ -29,12 +29,20 @@ SECRET_KEY =\
 DEBUG = True
 
 
-2
-ALLOWED_HOSTS=['localhost','127.0.0.1']
+# ALLOWED_HOSTS=['localhost','127.0.0.1']
+# CSRF_TRUSTED_ORIGINS = [
+#     'http://127.0.0.1:8000',  # Add the scheme
+#     'http://localhost:8000',   # Add other trusted origins if needed    
+# ]
+
+
+ALLOWED_HOSTS=['localhost','127.0.0.1','https://swarnavahana-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [
-    'http://127.0.0.1:8000',  # Add the scheme
+    'http://127.0.0.1:8000',
     'http://localhost:8000',   # Add other trusted origins if needed
+    'https://swarnavahana-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
 ]
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
 }

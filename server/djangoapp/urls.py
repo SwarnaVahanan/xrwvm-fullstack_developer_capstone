@@ -20,6 +20,12 @@ urlpatterns = [
 
     # path for add a review view
     path(route='add_review', view=views.add_review, name='add_review'),
+<<<<<<< HEAD
+=======
+
+    # path to get all cars
+    path(route='get_cars', view=views.get_cars, name='getcars'),
+>>>>>>> 317c550496e9e8a1b49dc01762e94981e3b9ccff
 
     # path to get all cars
     path(route='get_cars', view=views.get_cars, name='getcars'),
